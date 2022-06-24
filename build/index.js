@@ -1,2 +1,2 @@
 "use strict";
-console.log('hkfffi');
+console.log(2);
