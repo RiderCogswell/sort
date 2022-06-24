@@ -5,7 +5,7 @@ class Sorter {
   //   this.collection = collection;
   // } 
   // is the same as below because of public
-  constructor(public collection: number[]) {}
+  constructor(public collection: number[] | string) {}
 
   sort(): void {
     const { length } = this.collection;
