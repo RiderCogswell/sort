@@ -5,13 +5,17 @@ class Sorter {
   //   this.collection = collection;
   // } 
   // is the same as below because of public
-  constructor(public collection: number[] | string) {}
+  constructor(public collection: number[] | string | LinkedList) {}
 
   sort(): void {
     const { length } = this.collection;
 
     for (let i = 0; i < length; i++) {
       for (let j = 0; j < length - 1; j++) {
+        if (this.collection instanceof LinkedList) {
+          
+        }
+
         // typeguard - only runs if it satisfies this
         if (this.collection instanceof Array) {
           // this only works if collection is an array of numbers aka numbers[]
@@ -20,6 +24,10 @@ class Sorter {
             this.collection[j] = this.collection[j+1];
             this.collection[j+1] = leftHand;
           }
+        }
+
+        if (typeof this.collection === 'string') {
+
         }
       }
     }
