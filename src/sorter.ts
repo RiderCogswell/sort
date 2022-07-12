@@ -1,8 +1,9 @@
-interface Sortable {
-  length: number;
-  compare(leftIdx: number, rightIdx: number): boolean;
-  swap(leftIdx: number, rightIdx: number): void;
-}
+// we do not need this because we are using an abstract to class to type annotate
+// interface Sortable {
+//   length: number;
+//   compare(leftIdx: number, rightIdx: number): boolean;
+//   swap(leftIdx: number, rightIdx: number): void;
+// }
 
 export abstract class Sorter {
   abstract compare(leftIdx: number, rightIdx: number): boolean;

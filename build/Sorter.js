@@ -1,4 +1,10 @@
 "use strict";
+// we do not need this because we are using an abstract to class to type annotate
+// interface Sortable {
+//   length: number;
+//   compare(leftIdx: number, rightIdx: number): boolean;
+//   swap(leftIdx: number, rightIdx: number): void;
+// }
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Sorter = void 0;
 class Sorter {

@@ -4,14 +4,11 @@ import { CharactersCollection } from './CharactersCollection';
 import { LinkedList } from './LinkedList';
 
 // const numbers = new NumbersCollection([10, 3, -5, 0])
-// const sorter = new Sorter(numbers)
-// sorter.sort();
+// numbers.sort();
 // console.log(numbers.data);
 
 // const charCollect = new CharactersCollection('Xdjfuf');
-// const sorter = new Sorter(charCollect)
-// sorter.sort()
-
+// charCollect.sort()
 // console.log(charCollect.data);
 
 const linkedList = new LinkedList();
@@ -20,6 +17,5 @@ linkedList.add(50)
 linkedList.add(30)
 linkedList.add(-80)
 
-const sorter = new Sorter(linkedList)
-sorter.sort()
+linkedList.sort()
 linkedList.print();
