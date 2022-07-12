@@ -4,7 +4,13 @@ interface Sortable {
   swap(leftIdx: number, rightIdx: number): void;
 }
 
-export class Sorter {
+export abstract class Sorter {
+  abstract compare(leftIdx: number, rightIdx: number): boolean;
+  abstract swap(leftIdx: number, rightIdx: number): void;
+  // since length is a getter, instead of a traditional
+  // function, we can simply right it with this syntax
+  abstract length: number;
+
   sort(): void {
     const { length } = this;
 
